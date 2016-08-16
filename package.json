@@ -1,0 +1,35 @@
+{
+  "name": "",
+  "version": "1.0.0",
+  "description": "",
+  "engines": {
+    "node": "6.3.0"
+  },
+  "main": "app.js",
+  "scripts": {
+    "mocha": "_mocha",
+    "eslint": "eslint **/*.js **/*.spec.js *.js",
+    "tdd": "_mocha -w",
+    "test": "npm-run-all mocha eslint"
+  },
+  "author": "",
+  "license": "",
+  "homepage": "",
+  "dependencies": {
+    "bluebird": "~3.4.1",
+    "jsdom": "~9.4.1",
+    "mathjs": "^3.3.0",
+    "moment": "~2.14.1",
+    "ramda": "~0.21.0",
+    "yargs": "~4.8.1"
+  },
+  "devDependencies": {
+    "babel-cli": "~6.10.1",
+    "babel-preset-es2015": "~6.9.0",
+    "chai": "~3.5.0",
+    "mocha": "~2.5.3",
+    "npm-run-all": "~2.3.0",
+    "sinon": "~1.17.4",
+    "sinon-chai": "~2.8.0"
+  }
+}
