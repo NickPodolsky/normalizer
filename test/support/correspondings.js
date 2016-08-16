@@ -6,7 +6,7 @@ global.requireCorrespondingModule = (testFilename) => {
 
     let modulePath = testFilename.replace('.spec', '');
     modulePath = modulePath
-        .replace('test/', '')
+        .replace('test' + path.sep, '')
         .replace('.js', '');
 
     return require(path.resolve(modulePath));
@@ -14,7 +14,7 @@ global.requireCorrespondingModule = (testFilename) => {
 
 global.correspondingModuleDirPath = (testFileDir) => {
 
-    let moduleDirPath = testFileDir.replace('test/', '');
+    let moduleDirPath = testFileDir.replace('test' + path.sep, '');
 
     return moduleDirPath;
 };
